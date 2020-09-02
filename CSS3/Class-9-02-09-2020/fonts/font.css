@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Gardenia';
+  src: url('Gardenia.eot');
+  src: url('Gardenia.eot?#iefix') format('embedded-opentype'),
+       url('Gardenia.svg#Gardenia') format('svg'),
+       url('Gardenia.ttf') format('truetype'),
+       url('Gardenia.woff') format('woff'),
+       url('Gardenia.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

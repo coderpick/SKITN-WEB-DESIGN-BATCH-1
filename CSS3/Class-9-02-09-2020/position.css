@@ -1,0 +1,60 @@
+.static {
+    position: static;
+    margin-left: 50px;
+}
+
+.nav {
+    background: green;
+    color: #fff;
+    padding: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+/* css realtive & absloute position */
+
+.realtive {   
+    height: 150px;
+    width: 300px;
+    position: relative;
+    background: green;
+    z-index: 1;
+}
+
+.absolute {   
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    right: -25%;
+    background: red;
+    z-index: -1;
+   
+}
+
+.fixed {
+    color: red;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.scrollTop {
+    height: 80px;
+    width: 80px;
+    background: red;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 26px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+
+.scrollTop a {
+    text-decoration: none;
+    color: #fff;
+}
