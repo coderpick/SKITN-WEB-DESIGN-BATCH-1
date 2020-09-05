@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css image</title>
+    <style>
+        header{
+            text-align: center;
+            padding: 20px;
+            background: #ddd url('img/header.jpg') no-repeat scroll center center / cover;
+        }
+        header h2{
+            color:#fff;
+            text-transform: uppercase;
+        }
+        .post-image{
+            border:2px solid red;
+            border-radius:5px;
+            height: 270px;
+            width:270px;
+            transition: .6s;
+        }
+          .post-image:hover{
+              border-radius: 50%;
+               border:2px solid greenyellow;
+          }
+          .box{
+              height: 200px;
+              width: 200px;
+              background: tomato;
+              border-radius: 118px 0;
+               transition: .5s;
+          }
+          .box:hover{
+               border-radius:0 118px;
+               background:green;
+          }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h2>Welcome to my website</h2>
+    </header>
+    <main>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus labore, !</h3>
+         <img class="post-image" src="img/m.jpg" alt="">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus non fugit voluptate veritatis nam neque necessitatibus molestiae! Obcaecati placeat est aut omnis illo modi aliquam, ea animi explicabo delectus doloribus.</p>
+    </main>
+
+    <div class="box">
+
+    </div>
+
+</body>
+</html>

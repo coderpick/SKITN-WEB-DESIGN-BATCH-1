@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'SummerSplash-Regular';
+  src: url('SummerSplash-Regular.eot');
+  src: url('SummerSplash-Regular.eot?#iefix') format('embedded-opentype'),
+       url('SummerSplash-Regular.svg#SummerSplash-Regular') format('svg'),
+       url('SummerSplash-Regular.ttf') format('truetype'),
+       url('SummerSplash-Regular.woff') format('woff'),
+       url('SummerSplash-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
