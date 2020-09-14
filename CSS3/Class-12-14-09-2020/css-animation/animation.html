@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+    <style> 
+        .box{
+            width: 100%;
+            height: 300px;
+            background:red;
+            margin: 20px auto;
+            animation-name: colorChange;
+            animation-duration: 6s;
+            animation-delay:2s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes colorChange {
+            0%   {background-color: red;}
+            25%  {background-color: yellow;}
+            50%  {background-color: blue;}
+            100% {background-color: green;}
+        }
+        .circle{
+            height: 100px;
+            width: 100px;
+            background: rgb(6, 206, 173);
+            position: relative;
+            border-radius: 50%;
+            animation-name: circleMove;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+          
+        }
+        @keyframes circleMove {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+
+    </div>
+    <hr>
+
+    <div class="circle"></div>
+
+</body>
+</html>

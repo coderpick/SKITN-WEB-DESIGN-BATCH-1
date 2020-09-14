@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 2d Transformation</title>
+    <style>
+        .translate {
+            position: relative;
+            height: 100px;
+            width: 100px;
+            transition: .6s;
+        }
+
+        .translate:hover {
+          
+            transform: translate(200px, 0);
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            background: red;
+            margin: 20px auto; 
+            transition: 1s;         
+        }
+        .box:hover{
+            transform: rotate(-360deg);
+            height: 200px;
+            width: 200px;
+            background: blue;
+            border-radius: 50%;
+        }
+        .gallary{
+            border: 2px solid red;
+            width: 240px;
+            height: 320px;
+            overflow: hidden;
+        }
+        .gallary img{
+            width: 100%;
+            transition: .5s;
+        }
+        .gallary:hover img{
+            transform: scale(1.8);
+        }
+        .skew{
+            position: relative;
+            transform: skew(-45deg);
+            width:240px;
+            height: 320px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1. css translate</h1>
+    <img class="translate" src="img/club.jpg" alt="">
+    <hr>
+    <h1>2. css rotate</h1>
+    <div class="box">       
+    </div>
+    <hr>
+    <h1>3. css scale</h1>
+    <div class="gallary">
+        <img src="img/boy.jpg" alt="">
+    </div>
+
+    <h1>4. css skew</h1>
+    <img class="skew" src="img/boy.jpg" alt="">
+</body>
+
+</html>
