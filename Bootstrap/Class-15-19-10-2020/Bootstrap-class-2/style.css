@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+a:focus,a:hover{
+    text-decoration: none;
+}
+p{
+	text-align: justify;
+}
+img{
+	max-width: 100%;
+}
+.header{
+	padding: 30px;
+	background: url(img/bg.jpg)no-repeat center center / cover;
+	color:#fff;
+}
