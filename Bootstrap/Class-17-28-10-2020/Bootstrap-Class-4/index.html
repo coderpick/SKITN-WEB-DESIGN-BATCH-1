@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <!-- Bootstrap css & icofont css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/icofont.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+  <!-- Add your site or application content here -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Registration Form</h2>
+        <h5>Creating Vertical Form Layout</h5>
+        <form action="" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" class="form-control" id="name" placeholder="Enter name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" id="password" placeholder="Enter password"
+              required>
+          </div>
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <span class="icofont icofont-user"></span>
+              </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Username">
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search...">
+            <div class="input-group-append">
+              <button type="button" class="btn btn-secondary">
+                <i class="icofont-search"></i>
+              </button>
+            </div>
+          </div>
+          <button type="button" name="submit" class="btn btn-success">Sign Up</button>
+        </form>
+      </div><!-- //.col-lg-6  -->
+      <div class="col-lg-6">
+        <h2>Login Form</h2>
+        <h5>Creating Horizontal Form Layout</h5>
+        <form action="" method="post" enctype="multipart/form-data">
+
+          <div class="form-group row">
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" name="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="password" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" name="password" class="form-control" id="password" placeholder="Enter password"
+                required>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+              <label for="remember" class=" form-check-label">
+                <input type="checkbox" name="remember" id="remember"> Remember me
+              </label>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+              <label for="remember" class=" form-check-label">
+                <button type="button" name="submit" class="btn btn-success">Sign In</button>
+              </label>
+            </div>
+          </div>
+        </form>
+      </div><!-- //.col-lg-6  -->
+    </div><!-- //.row -->
+    <h2>Login Form</h2>
+    <h5>Creating Inline Form Layout</h5>
+    <div class="row">     
+      <div class="col-12">
+        <form class="form-inline">
+          <div class="form-group mr-2">
+            <label class="sr-only" for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+          </div>
+          <div class="form-group mr-2">
+            <label class="sr-only" for="inputPassword">Password</label>
+            <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+          </div>
+          <div class="form-group mr-2">
+            <label><input type="checkbox" class="mr-1"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+      </div>
+    </div><!-- //.row -->
+  </div><!-- //.container -->
+<hr>
+
+<section id="team" class="pt-5 pb-5 bg-secondary text-white">
+  <div class="container">
+      <div class="section-title text-center">
+        <h2>Meet our Team</h2>
+        <hr>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa dolores vitae quibusdam ipsam. Impedit dolorem, omnis iure velit qui accusantium aliquam sunt pariatur quisquam commodi tempore aliquid corrupti voluptas consectetur.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="team-member">
+              <img src="img/t1.jpg" class="rounded img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="team-member">
+            <img src="img/t1.jpg" class="rounded-circle img-fluid" alt="">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="team-member">
+            <img src="img/t1.jpg" class="img-thumbnail" alt="">
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="team-member">
+            <img src="img/t1.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div><!-- //.row -->
+  </div>
+</section>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
