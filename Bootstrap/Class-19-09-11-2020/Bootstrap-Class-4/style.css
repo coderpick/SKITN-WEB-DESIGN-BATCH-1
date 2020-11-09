@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+img {
+    /* max-width: 100%; */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    text-decoration: none;
+}
+
+/* slider css */
+
+.carousel-item {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.carousel-content {
+    padding: 120px 0;
+}
+
+.carousel-content h2 {
+    font-size: 72px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.carousel-content p {
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+.carousel-btn {
+    margin: 40px 0;
+}
+
+.carousel-btn a {
+    display: inline-block;
+    padding: 12px 16px;
+    background: #FF9800;
+    width: 150px;
+    text-align: center;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 24px;
+}
+
+a.btn-white {
+    background: rgba(255, 255, 255, 0.3) !important;
+}
+
+.carousel-btn a:last-child {
+    margin-right: 0;
+    ;
+}
+
+element.style {}
+
+.carousel-indicators li {
+    width: 20px;
+    height: 20px;
+    background-color: #ff9800;
+    border-radius: 50%;
+}
