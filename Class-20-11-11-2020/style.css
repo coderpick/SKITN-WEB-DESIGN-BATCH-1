@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Metrophobic', sans-serif;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 4px 0;
+}
+
+#hero-wrapper {
+    background: url(img/bg-masthead.jpg) no-repeat center center / cover;
+    position: relative;
+    z-index: 1;
+}
+
+#hero-wrapper::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 140px 0;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.hero-content p {
+    color: #cacdcf;
+    max-width: 745px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.line-bar {
+    max-width: 100px;
+    margin: 20px auto;
+    border: none;
+    border-top: 3px solid #F24516;
+}
+
+.line-bar.bgwhite {
+    border-top: 3px solid #fff;
+}
+
+.custom-btn {
+    display: inline-block;
+    background: #eb5931;
+    color: #fff;
+    padding: 16px 46px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+.custom-btn:hover {
+    background: #F24516;
+    color: #fff;
+}
+
+/* get start section css */
+
+.section-padding {
+    padding: 96px 0;
+}
+
+#getstart {
+    background: #F4623A;
+    color: #fff;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.section-title h1 {
+    font-size: 42px;
+}
+
+/* service section css  */
+
+.single-service {
+    text-align: center;
+}
+
+.service-icon i {
+    font-size: 96px;
+    font-weight: 700;
+    color: #f4623a;
+}
