@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form validation</title>
+ <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <script src="js/jquery-3.1.0.min.js"></script> 
+  <script src="js/jquery-ui.min.js"></script>    
+    <script>
+      $(document).ready(function(){          
+          $( function() {
+            var availableTags = [
+                          "ActionScript",
+                          "AppleScript",
+                          "Asp",
+                          "BASIC",
+                          "C",
+                          "C++",
+                          "Clojure",
+                          "COBOL",
+                          "ColdFusion",
+                          "Erlang",
+                          "Fortran",
+                          "Groovy",
+                          "Haskell",
+                          "Java",
+                          "JavaScript",
+                          "Lisp",
+                          "Perl",
+                          "PHP",
+                          "Python",
+                          "Ruby",
+                          "Scala",
+                          "Scheme"
+                    ];
+              
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );          
+      })
+    </script> 
+</head>
+<body>
+ 
+<div class="container">
+ <div class="content">
+          <h1>Jquery:Autocomplete</h1>
+    <hr>   
+      <div class="para">
+        <div class="ui-widget">
+          <label for="tags">Tags: </label>
+          <input id="tags">
+        </div>
+
+      </div>
+ </div>
+</div>
+ 
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq-hide-show-toggle</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 0 auto;
+            border: 2px solid #ff4500;
+            background: #fff;
+        }
+        .content{
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .para {
+            background: #fff;
+            padding: 20px;
+            margin-top: 14px;
+            display: none;
+        }
+        .para p{
+           font-size: 18px;
+            line-height: 22px;
+            text-align: justify;
+        }
+    </style>
+  
+</head>
+<body>
+ 
+ <div class="container">
+     <div class="content">
+        <h3>Jquery: fadeIn(), fadeOut(), fadeTo(), fadeToggle() menthod</h3>
+        <hr> 
+        
+    <button id="fadeIn">fadeIn</button>
+    <button id="fadeOut">fadeOut</button>
+    <button id="fadeTo">fadeTo</button>
+    <button id="fadeToggle">fadeToggle</button>
+    
+      <div class="para">
+          <h2>We are learing Jquery</h2>
+          <p>jQuery is a JavaScript Library.jQuery greatly simplifies JavaScript programming.jQuery is easy to learn.jQuery is a JavaScript Library.jQuery greatly simplifies JavaScript programming.jQuery is easy to learn.jQuery is a JavaScript Library.jQuery greatly simplifies JavaScript programming.jQuery is easy to learn.jQuery is a JavaScript Library.jQuery greatly simplifies JavaScript programming.jQuery is easy to learn.jQuery is a JavaScript Library.jQuery greatly simplifies JavaScript programming.jQuery is easy to learn.</p>
+      </div>                                  
+     </div>
+ </div>
+ 
+  <script src="jquery-3.1.0.min.js"></script> 
+    <script>
+        $(document).ready(function(){
+            $("#fadeIn").click(function(){
+                $(".para").fadeIn(1000); 
+            })
+           
+            $("#fadeOut").click(function(){
+                $(".para").fadeOut(1000); 
+            })
+            
+            $("#fadeTo").click(function(){
+                $(".para").fadeTo(1000,0.4); 
+            })
+            
+            $("#fadeToggle").click(function(){
+                $(".para").fadeToggle(1000); 
+            })
+        })
+    </script> 
+</body>
+</html>

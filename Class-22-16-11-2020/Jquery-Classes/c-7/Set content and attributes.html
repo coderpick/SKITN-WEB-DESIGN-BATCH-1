@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq-hide-show-toggle</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 0 auto;
+            border: 2px solid #ff4500;
+            background: #fff;
+        }
+        .content{
+            background: #fff;
+            padding: 20px;
+        }
+       
+    </style>
+  
+</head>
+<body>
+ 
+ <div class="container">
+     <div class="content">
+              <h1>Jquery: Set Content And Attributes</h1>
+        <hr>
+		
+		<button id="btn1">Set Text</button>
+		<button id="btn2">Set HTML</button>
+		<button id="btn3">Set Value</button>
+		<hr/>
+		<p id="test1">This is a paragraph.</p>
+		<p id="test2">This is another paragraph.</p>
+
+		<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+	
+		
+		
+     </div>
+ </div>
+ 
+  <script src="jquery-3.1.0.min.js"></script> 
+    <script>
+  $(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#test1").text("Hello world!");
+    });
+    $("#btn2").click(function(){
+        $("#test2").html("<b>Hello world!</b>");
+    });
+    $("#btn3").click(function(){
+        $("#test3").val("Dolly Duck");
+    });
+});
+    </script> 
+</body>
+</html>

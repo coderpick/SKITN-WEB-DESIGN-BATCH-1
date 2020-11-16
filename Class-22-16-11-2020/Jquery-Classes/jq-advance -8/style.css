@@ -1,0 +1,37 @@
+   .container{
+            width: 960px;
+            margin: 0 auto;
+            border: 2px solid #ff4500;
+            background: #fff;
+        }
+        .content{
+            background: #fff;
+            padding: 20px;
+        }
+        .para {
+            background: #e4e4e4;
+            padding: 30px;
+            margin: 25px;           
+        }
+.toggler {
+    width: 500px; 
+    height: 200px; 
+    position: relative; 
+}
+#button { 
+    padding: .5em 1em; 
+    text-decoration: none; 
+}
+#effect {
+    width: 240px; 
+    height: 170px; 
+    padding: 0.4em; 
+    position: relative; 
+    background: #fff; 
+}
+#effect h3 {
+    margin: 0; 
+    padding: 0.4em; 
+    text-align: center; 
+}
+ 

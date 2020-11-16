@@ -1,0 +1,28 @@
+
+
+// for  menu bg change
+
+    $(window).on('scroll', function (){
+    if ($(window).scrollTop() > 150){
+    $('.navbar-default').addClass('menu-bg');
+    } else {
+    $('.navbar-default').removeClass('menu-bg');
+    }
+      });
+
+/* scroll to js*/
+ $(window).scroll(function () {
+    if ($(this).scrollTop() > 200) {
+        $('.scroll-top').fadeIn();
+    } else {
+        $('.scroll-top').fadeOut();
+    }
+});
+
+
+$('.scroll-top').click(function () {
+    $("html, body").animate({
+        scrollTop: 0
+    }, 1000);
+    return false;
+});   

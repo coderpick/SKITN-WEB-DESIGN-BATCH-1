@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq-hide-show-toggle</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 0 auto;
+            border: 2px solid #ff4500;
+            background: #fff;
+        }
+        .content{
+            background: #fff;
+            padding: 20px;
+        }
+       
+    </style>
+  
+</head>
+<body>
+ 
+ <div class="container">
+     <div class="content">
+              <h1>Jquery: Get Content And Attributes</h1>
+        <hr>
+    <button id="show">Show Text</button>
+    <button id="source">Show html</button>
+    <button id="testval">Show value</button>
+      <hr>
+        <p id="line">We are learning Jquery</p> 
+        <p id="line2">We are learning <strong>Jquery</strong></p> 
+        <div>
+            <input type="text" id="name"  value="Hafizur">
+        </div>
+     </div>
+ </div>
+ 
+  <script src="jquery-3.1.0.min.js"></script> 
+    <script>
+        $(document).ready(function(){
+            //get text
+            $("#show").click(function(){
+                alert("The text is: "+$("#line").text());
+            });
+
+            //get html
+              $("#source").click(function(){
+                alert("The text is: "+$("#line2").html());
+            });
+           
+           //get value
+               $("#testval").click(function(){
+                alert("The value is: "+$("#name").val());
+            });
+        })
+    </script> 
+</body>
+</html>
