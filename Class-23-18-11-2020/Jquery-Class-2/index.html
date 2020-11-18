@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jqury class -1</title>
+</head>
+<body>	
+	<h1>Today we will learn jQuery</h1>	
+	<h1>Today we will learn jQuery</h1>	
+	<h1 id="hideThisTitle" style="color:red">Today we will learn jQuery</h1>	
+	<h1>Today we will learn jQuery</h1>	
+	<h1>Today we will learn jQuery</h1>	
+
+	<button id="hide">Hide Title</button>
+	<button id="show">Show Title</button>
+	<button id="toggle">Toggle Title</button>
+     
+     
+
+	<script  src="js/jquery-3.5.1.min.js"></script>
+	<script>
+		
+		$(document).ready(function() {
+			
+			$('#hide').click(function(){
+				$('#hideThisTitle').hide(2000);
+			})
+
+			$('#show').click(function(){
+				$('#hideThisTitle').show(2000);
+			})
+
+			$('#toggle').click(function(){
+				$('#hideThisTitle').toggle(2000);
+			})
+
+		});
+
+
+	</script>
+
+</body>
+</html>

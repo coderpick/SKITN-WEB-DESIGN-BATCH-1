@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+    p{
+        padding: 15px;
+        background: #B0C4DE;
+    }
+</style>
+</head>
+<body>
+
+	<button id="slideUp">Slide up</button>
+	<button id="slidDown">Slide Down</button>
+	<button id="slideToggle">Slide Toggle</button>
+    <p class="very-fast">This paragraph will fade in/out with very fast speed.</p>
+    <p class="normal">This paragraph will fade in/out with default speed.</p>
+    <p class="fast">This paragraph will fade in/out with fast speed.</p>
+    <p class="slow">This paragraph will fade in/out with slow speed.</p>
+    <p class="very-slow">This paragraph will fade in/out with very slow speed.</p>
+
+	
+	<script src="jquery-3.1.0.min.js"></script>
+	<script>
+		
+		jQuery(document).ready(function($) {
+			$("#slideUp").click(function() {
+				    $("p.normal").slideUp();
+			        $("p.fast").slideUp("fast");
+			        $("p.slow").slideUp("slow");
+			        $("p.very-fast").slideUp(50);
+			        $("p.very-slow").slideUp(2000);
+			});
+
+			// slide donw
+			$("#slidDown").click(function() {
+				    $("p.normal").slideDown();
+			        $("p.fast").slideDown("fast");
+			        $("p.slow").slideDown("slow");
+			        $("p.very-fast").slideDown(50);
+			        $("p.very-slow").slideDown(2000);
+			});
+
+			// slide toggle
+			$("#slideToggle").click(function() {
+				    $("p.normal").slideToggle();
+			        $("p.fast").slideToggle("fast");
+			        $("p.slow").slideToggle("slow");
+			        $("p.very-fast").slideToggle(50);
+			        $("p.very-slow").slideToggle(2000);
+			});
+		});
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jq-method-Chaining</title>
+	<style>
+    .box{
+    	height: 150px;
+    	width: 200px;
+    	background: red;
+    	text-align: center;
+    	font-size: 30px;
+    	color:#fff;
+    	 border: 2px solid blue;
+
+    }
+</style>
+</head>
+<body>
+
+	<button id="start">Start method chaining</button>
+	<button id="reset">Reset</button>
+
+	<div class="box">
+		<p>Hello Bangladesh</p>
+	</div>
+	
+	<script src="jquery-3.1.0.min.js"></script>
+	<script>
+		
+		jQuery(document).ready(function($) {
+			$("#start").click(function() {
+				$('.box').animate({width:'100%'},1000).animate({height:'400'},1000).animate({borderWidth:40},function(){
+				   	alert("animation completed");
+				   })
+			});
+
+			// slide donw
+			$("#reset").click(function() {
+				   $(".box").removeAttr("style");  
+			});
+
+		
+			
+		});
+
+	</script>
+</body>
+</html>

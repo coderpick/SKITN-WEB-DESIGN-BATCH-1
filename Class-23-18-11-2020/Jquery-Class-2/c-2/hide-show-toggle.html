@@ -48,8 +48,9 @@
   <script src="jquery-3.1.0.min.js"></script> 
     <script>
         $(document).ready(function(){
+
             $("#hide").click(function(){
-                $(".para").hide("slow"); 
+                $(".para").hide(1000); 
             })
              $("#show").click(function(){
                 $(".para").show("slow"); 
@@ -57,6 +58,7 @@
               $("#toggle").click(function(){
                 $(".para").toggle("slow"); 
             })
+
            
         })
     </script> 

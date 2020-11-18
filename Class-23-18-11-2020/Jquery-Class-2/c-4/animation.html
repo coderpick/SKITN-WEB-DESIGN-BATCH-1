@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>jq-hide-show-toggle</title>
+    <title>jq-animation</title>
     <style>
         .container{
             width: 960px;
@@ -11,12 +11,18 @@
             background: #fff;
         }
         .content{
-            background: #fff;
+            background: #ddd;
             padding: 20px;
         }
-      
+      .inside{
+          width: 300px;
+          height: 180px;
+          background: red;
+          padding: 20px;
+      }
        
     </style>
+      
   
 </head>
 <body>
@@ -31,8 +37,9 @@
     
       <div class="para">
          <div class="inside">
-          <p>We are learing Jquery</p>
-          
+          <h3>We are learing Jquery</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ducimus saepe inventore possimus ut nesciunt consequuntur praesentium repudiandae dolore eius vitae quas sequi, reiciendis harum assumenda autem cum magni quisquam.</p>
+        
          </div>
        
       </div>                                  
@@ -45,10 +52,9 @@
             
             $("#animate").click(function(){
                 $(".inside").animate({
-                    left:'400px',                   
-                    opacity:'.4',
+                    right:'600px',   
                     height:'300px',
-                    width:'300px'              
+                    width:'800px'                             
                    },1500); 
                 $("#stop").click(function(){
                     $(".inside").stop();
