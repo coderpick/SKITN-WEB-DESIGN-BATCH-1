@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jq-hide-show-toggle</title>
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            border: 2px solid #ff4500;
+            background: #fff;
+        }
+
+        .content {
+            background: #fff;
+            padding: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="content">
+            <h1>Jquery: Set Content And Attributes</h1>
+            <hr>
+            <ul>              
+                <li>after() - Inserts content after the selected elements</li>
+                <li>before() - Inserts content before the selected elements</li>
+            </ul>       
+            <button id="before">before</button>
+            <button id="after">after</button>
+            <br>
+
+            <h1 id="name">Hafizur</h1>
+        </div>
+    </div>
+
+    <script src="jquery-3.1.0.min.js"></script>
+    <script>
+        $(document).ready(function () {       
+
+            //before
+            $("#before").click(function () {
+                $("#name").before("Md. ");
+            });
+            //after
+            $("#after").click(function () {
+                $("#name").append(" Rahman");
+            });
+        });
+    </script>
+</body>
+
+</html>
