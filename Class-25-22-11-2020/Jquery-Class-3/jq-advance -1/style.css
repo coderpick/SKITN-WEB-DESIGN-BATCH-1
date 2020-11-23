@@ -1,0 +1,24 @@
+   .container {
+       width: 960px;
+       margin: 0 auto;
+       border: 2px solid #ff4500;
+       background: #fff;
+   }
+
+   .content {
+       background: #fff;
+       padding: 20px;
+   }
+
+   .para {
+       background: #e4e4e4;
+       padding: 30px;
+       margin: 25px;
+   }
+
+   .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+       border: 1px solid #0cbdad;
+       background: #009688;
+       font-weight: normal;
+       color: #fff;
+   }
