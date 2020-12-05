@@ -196,42 +196,66 @@ font-family: 'Roboto', sans-serif; */
             background: #f8f8f8;
         }
 
-        .video-bg{
+        .video-bg {
             background: url('img/video-bg.jpg') no-repeat center center / cover;
             position: absolute;
-            width:46% ;
+            width: 46%;
             height: 100%;
-            top:0;
-            left:0;
+            top: 0;
+            left: 0;
         }
+
         .testimonial {
-    padding: 90px 0;
-}
+            padding: 90px 0;
+        }
 
-.testmonial-item {
-    margin-bottom: 50px;
-}
-.testmonial-item:last-child {
-    margin-bottom: 0;
-}
+        .testmonial-item {
+            margin-bottom: 50px;
+        }
 
-.testmonial-item h3 {
-    font-size: 22px;
-    font-weight: 700;
-}
-.video-play-btn {
-    position: absolute;
-    border: 5px solid #fff;
-    width: 90px;
-    height: 90px;
-    right: 40px;
-    bottom: 50px;
-    text-align: center;
-    line-height: 82px;
-    font-size: 36px;
-    border-radius: 50%;
-}
-.video-play-btn i {
-    color: #fff;
-    margin-left: 6px;
-}
+        .testmonial-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .testmonial-item h3 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .video-play-btn {
+            position: absolute;
+            border: 5px solid #fff;
+            width: 90px;
+            height: 90px;
+            right: 40px;
+            bottom: 50px;
+            text-align: center;
+            line-height: 82px;
+            font-size: 36px;
+            border-radius: 50%;
+        }
+
+        .video-play-btn i {
+            color: #fff;
+            margin-left: 6px;
+        }
+
+        /* work section css */
+
+        .filter-nav {
+            margin: 40px 0;
+        }
+
+        .filter-nav li {
+            cursor: pointer;
+        }
+
+        .filter-nav .mixitup-control-active {
+            color: #fab702;
+            text-decoration: underline;
+        }
+
+        .mix{
+            position: relative;
+            padding: 2px;
+        }
