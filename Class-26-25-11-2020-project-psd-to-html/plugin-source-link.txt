@@ -1,1 +1,4 @@
-https://www.jqueryscript.net/lightbox/Youtube-Vimeo-Modal-Plugin-jQuery.html
+1. https://www.jqueryscript.net/lightbox/Youtube-Vimeo-Modal-Plugin-jQuery.html
+2. https://www.jqueryscript.net/animation/Animating-Numbers-Counting-Up-with-jQuery-Counter-Up-Plugin.html
+3. http://imakewebthings.com/waypoints/
+4. https://www.jqueryscript.net/animation/count-up-visible-rcounterup.html
